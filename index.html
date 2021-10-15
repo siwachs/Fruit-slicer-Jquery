@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
 </head>
 <body>
 
@@ -16,7 +18,7 @@
         <div id="life"></div>
         <div id="score">Score: <span id="score_val">0</span></div>
         <div id="display">
-            
+            <img class="fruit" id="fruit1">   
         </div>
         <div id="inst_box">
             Slice The Fruits
@@ -27,6 +29,13 @@
            
         </div>
     </div>
+    <!--put audio file in audio tag-->
+    <audio id="play_sound">
+        <source src="./audio/sound.mp3"></source>
+
+        <source src="./audio/sound.wav"></source>
+    </audio>
+
     <!--write script at the end so that our element first load then script exe-->
     
     <script src="jquery.js">
