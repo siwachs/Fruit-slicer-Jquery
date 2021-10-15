@@ -1,0 +1,127 @@
+html
+{
+    background: radial-gradient(circle,white,gray);
+    height:100%;
+}
+
+#container
+{
+   
+    
+    background-color:#9DD2EA;
+    /*to put it in center use margin*/
+    margin: 10px;
+    /*padding is to create space b/w border and element inside our container*/
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    /*horizonatal vertical blur spread_radius*/
+    position: relative;
+}
+
+#score
+{
+    /*float:right;*/
+    /*set position to absalute so that its positial remain relative to container*/
+    background-color: #f1ff92;
+    color:#888ef5;
+    padding: 10px;
+    position: absolute;
+    left: 930px;
+    box-shadow: 0px 4px 0px  #9da853;
+}
+
+#life
+{
+    border:1px solid oldlace;
+    background-color: #f1ff92;
+    position: absolute;
+    padding: 10px;
+    color:#888ef5;
+    box-shadow: 0px 4px 0px  #9da853;
+    left: 30px;
+    display: none;}
+
+
+#display
+{
+    height: 350px;
+    width: auto;
+    border: oldlace 1px solid;
+    margin: 55px 20px 10px 20px;
+    /*top left bottom right*/
+
+    background-color: white;
+    box-shadow: 0px 4px #535aa8;
+}
+
+#inst_box
+{
+    width: 500px;
+    height: auto;
+    background-color: #b481d9;
+    border: oldlace solid 1px;
+    margin:10px auto;
+    /*top and bottom, left and right*/
+
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0px 4px #8153a8;
+}
+
+
+
+
+
+
+
+
+
+
+#bt:active
+{
+    background-color: #9c89f6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+    box-shadow: 0px 0px #6b54d3;
+    top:4px;
+    /*move box 4px down*/
+
+}
+
+#bt
+{
+    width: 100px;
+    border: 1px solid oldlace;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255,
+    0.5);
+    box-shadow: 0px 4px rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: all 0.2;
+    border-radius: 3px;
+    position: relative;
+}
+
+#game_over
+{
+    border: 1px solid oldlace;
+    height: 340px;
+    width: 500px;
+    /*we use linear gradient so use background not background color
+    (top to bottom)*/
+    background: linear-gradient(#f3ca6b,
+    #9dd2ea);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 80px;
+    left:270px;
+    /*its position is absalute so to make shure it not intract with other absolute element set a z-index and set it to highest value*/
+    z-index: 5;
+    display: none;
+}
